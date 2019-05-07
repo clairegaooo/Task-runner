@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body onload="getMessages()">
+
+<div class="title">
+    <h1>Task Tracker</h1>
+    <p>v 2.0</p>
+</div>
+
+<div class="content">
+    <div class="create-task">
+        <h2 style="font-weight: 200">Create a Task</h2>
+
+        <form>
+            <div class="form-item">
+                <label for="task-name">Task Name</label><br>
+                <input type="text" name="name" id="task-name" style="font-size: 16px;">
+            </div>
+            <div class="form-item">
+                <label for="task-date">Date</label><br>
+                <input type="text" placeholder="mm/dd/yy" name="date" id="task-date" style="font-size: 16px;">
+            </div>
+            <div class="form-item">
+                <label for="task-assigned">Assigned To</label><br>
+                <input type="text" name="assigned" id="task-assigned" style="font-size: 16px;">
+            </div>
+            <button type="submit" id="task-submit" onclick="postMessage(event)">Submit</button>
+        </form>
+    </div>
+
+
+    <div class="existing-task">
+        <h2 style="font-weight: 200">Existing Task</h2>
+        <div id="messages">
+            <table></table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script src="app.js"></script>

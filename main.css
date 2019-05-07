@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0 auto;
+    width: 90vw;
+    font-size: 16px;
+}
+
+.title {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    border: 10px solid #e2e2e2;
+    border-bottom: none;
+
+}
+
+.title p {
+    color: #4c4c4c;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    border: 10px solid #f0f0f0;
+    border-top: none;
+}
+
+.content input {
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #ececec;
+    border: 1px solid #dedede;
+}
+
+.content form .form-item {
+    margin-top: 30px;
+}
+
+.create-task, .existing-task {
+    background-color: white;
+    width: 49.5%;
+    min-width: 500px;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.create-task form label {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.create-task button {
+    background-color: #434343;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: "Times New Roman", serif;
+    margin-top: 20px;
+}
+
+.existing-task table {
+    border: 5px solid #dedede;
+    border-radius: 3px;
+    margin: 30px auto;
+    width: 100%;
+
+}
+
+.existing-task table tr {
+    margin: 0 5px;
+    min-height: 50px;
+    line-height: 20px;
+    padding: 5px 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.existing-task table tr td {
+    word-wrap: break-word;
+}
+
+.existing-task table tr td:nth-child(1) {
+    width: calc(80% - 80px);
+}
+
+.existing-task table tr td:nth-child(2) {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #6f6f6f;
+    margin: 0 5px;
+    width: 80px;
+}
+
+.existing-task table tr td:nth-child(3) {
+    width: 20%;
+    text-align: right;
+    line-height: 20px;
+}
+
+.existing-task table tr:nth-child(odd) {
+    background-color: white;
+}
+
+.existing-task table tr:nth-child(even) {
+    background-color: #ececec;
+}
+
+@media only screen and (max-width: 1140px) {
+    .create-task, .existing-task {
+        width: 100vw;
+    }
+}
